@@ -11,9 +11,7 @@ const Index = () => {
 							Welcome to my portfolio website
 						</h1>
 						<p className="text-lg text-gray-500 mb-6">
-							I'm a senior software engineer, fitness lover and digital
-							marketing practitioner. Browse through my projects and let's
-							connect!
+					  {" 	I'm a senior software engineer, fitness lover and digital	marketing practitioner. Browse through my projects and let's	connect!"}
 						</p>
 						<div className="bg-gray-100 py-4">
 							<div className="max-w-6xl mx-auto px-4">
