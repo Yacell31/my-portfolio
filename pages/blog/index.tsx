@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const BlogPage = () => {
@@ -10,42 +12,75 @@ const BlogPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Blog Post Card 1 */}
           <div className="bg-white overflow-hidden shadow rounded-lg">
-            <a href="#" className="block w-full h-48 bg-gray-300"></a>
+            <div className="block w-full">
+                <Image
+                src='/custom-software.jpg'
+                height={150}
+                width={400}
+                alt='custom software for small businesses'
+              ></Image>
+            </div>
             <div className="px-4 py-4">
               <h2 className="text-2xl font-bold mb-2">
-                Blog Post Title
+              {"Custom Software for Small Businesses"}
               </h2>
               <p className="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed justo enim.
+              {"Gain a competitive advantage with tailored financial solutions."}
               </p>
-              <a href="#" className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+              <Link 
+              href={{
+                pathname:'/blog/[slug]',
+                query: { slug: '6' }
+              }}
+              
+              className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300">
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
           
           {/* Blog Post Card 2 */}
           <div className="bg-white overflow-hidden shadow rounded-lg">
-            <a href="#" className="block w-full h-48 bg-gray-300"></a>
+          <div className="block w-full">
+                <Image
+                src='/website.jpg'
+                height={150}
+                width={400}
+                alt='custom software for small businesses'
+                ></Image>
+            </div>
             <div className="px-4 py-4">
               <h2 className="text-2xl font-bold mb-2">
-                Blog Post Title
+              The Importance of Having a Website for Your Small Business in 2023
               </h2>
               <p className="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed justo enim.
+                {" In this blog post, we will discuss why having a website is crucial for small businesses, including its ability to increase visibility, reach new customers, and provide a platform for showcasing products and services"}
               </p>
-              <a href="#" className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+              <Link 
+              href={{
+                pathname:'/blog/[slug]',
+                query: { slug: '7' }
+              }}
+              
+              className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300">
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
           
           {/* Blog Post Card 3 */}
           <div className="bg-white overflow-hidden shadow rounded-lg">
-            <a href="#" className="block w-full h-48 bg-gray-300"></a>
+          <div className="block w-full">
+                <Image
+                src='/software-solutions.jpg'
+                height={150}
+                width={400}
+                alt='custom software for small businesses'
+                ></Image>
+            </div>
             <div className="px-4 py-4">
               <h2 className="text-2xl font-bold mb-2">
-                Blog Post Title
+              The Top Software Solutions Every Small Business Needs
               </h2>
               <p className="text-gray-700 mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed justo enim.
